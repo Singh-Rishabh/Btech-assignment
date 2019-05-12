@@ -1,0 +1,16 @@
+# ======== This file contains the settings for the program =======
+# File: settings.properties
+# Set to 24 hours
+quota.window.seconds = 25
+# Sustained max. CPU usage duration limit in minutes
+sustained.max.cpu.usage.duration.limit = 30
+# Limit on sustained CPU usage in percentage. 
+sustained.max.cpu.usage.limit = 5
+
+# Sustained max. memory usage duration limit in minutes
+sustained.max.memory.usage.duration.limit = 60
+# Limit on sustained memory usage in percentage. 
+sustained.max.memory.usage.limit = 1
+
+# Email addresses to be notified in case of violations. Value is a comma-separated list
+notify.emails = 2016csb1107@iitrpr.ac.in,notify2@test.com,notify3@test.com,

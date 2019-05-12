@@ -1,0 +1,30 @@
+Sample Run:
+	(Assumin you in the required Directory)
+	Direclty run code
+		javac *.java 				======  Compile the java code
+		java mainClass				======  Run java main file
+
+	Run code through the jar files
+		java -cp 2016csb1054.jar mainClass
+
+
+This code performs the desired task as given in the question using the concept of Interface and Abstract Classes.
+
+We have Three main blocks which are interleated.
+
+|----------------|                 |--------------------|                    |----------------|
+| Concrete Class | <<<<------>>>>  | Abstract Interface | <<<<--------->>>>  | User Programme |
+|----------------|                 |--------------------|                    |----------------|
+
+
+First Block is of Concrete Classes. These Include the classes which are considered as libraries for user and only their interfaces are provieded to user.
+	Here we have made three concrete classes .
+		BubbleSort
+		InsertionSort
+		SelectionSort
+	This concrete perform similar function but using different algoithms.
+
+Second Block is the Interface part by which user can interact with the Concrete Classes. 
+	This include the interface of various similar algorithms, Abstract classes to provide abstracion to different set of algo, a factory for each different sets of algo and the factory producer which interact with user to provide a factory of paticular type. This factory type is then used to return a Interface object of the concrete class which is then used by user to perform different work with that object. In this way user in not getting the actual implementation of the concrete classes but he/she is getting different interfaces to use method of the classes.
+
+Third Block is the User Programme which is made by user. He/She calls the factory Producer to Produce a Particular type of factory. This factory then return the interface object of that concrete class which user want to make. Then all the method of the interface class can be used by user to produce the desire output.

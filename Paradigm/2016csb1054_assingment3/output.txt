@@ -1,0 +1,89 @@
+These are the classes present in present working directeory incluing their path.
+
+./com/icl/saxon/aelfred/SAXDriver$Adapter.class
+./com/icl/saxon/aelfred/XmlParser$EncodingException.class
+./com/icl/saxon/aelfred/XmlParser.class
+./com/icl/saxon/aelfred/SAXParserImpl.class
+./com/icl/saxon/aelfred/DefaultHandler.class
+./com/icl/saxon/aelfred/SAXParserFactoryImpl.class
+./com/icl/saxon/aelfred/SAXDriver.class
+
+
+
+
+**************************** First Task *****************************
+
+These are the pool sizes of the classes present in the jar files.
+61
+13
+1214
+43
+32
+53
+651
+
+The average pool size of the classes is 295.2857
+The minimum pool size of the classes is 13
+The maximum pool size of the classes is 1214
+The standard deviation of constant pool sizes of the classes is 430.41731055394354
+
+*************************** Second Task ******************************* 
+
+The top 50 JVM instruction and their frequencies are: 
+
+aload_0 : 1266
+invokespecial : 617
+getfield : 500
+invokevirtual : 486
+aload_1 : 260
+goto : 255
+putfield : 237
+ldc : 235
+bipush : 218
+iconst_0 : 195
+aload : 183
+iload_1 : 165
+return : 161
+iload : 157
+dup : 152
+aload_2 : 143
+iconst_1 : 142
+new : 126
+ifeq : 125
+iload_2 : 121
+astore : 117
+aconst_null : 114
+iload_3 : 100
+areturn : 92
+aload_3 : 86
+ldc_w : 76
+ifne : 76
+checkcast : 75
+istore : 75
+aaload : 61
+if_icmpne : 61
+iinc : 59
+invokeinterface : 56
+ifnonnull : 51
+sipush : 49
+if_icmpeq : 47
+ireturn : 46
+aastore : 44
+iadd : 42
+ifnull : 40
+pop : 37
+if_icmplt : 36
+istore_3 : 35
+istore_1 : 34
+286 : 33
+invokestatic : 32
+astore_2 : 32
+iand : 31
+astore_3 : 30
+iconst_2 : 29
+
+
+*************************** Third Task ***********************************
+
+
+The average number of methods in all classes is 29.428572

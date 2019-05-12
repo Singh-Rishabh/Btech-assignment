@@ -1,0 +1,23 @@
+Design Document 
+
+Submitter name: Rishabh Singh
+Roll No.:		2016csb1054
+Course:			CSL-202 
+====================================================
+
+======================================== Implementation of the programme ======================================
+
+	The programme takes a command line argument from the user as a file name, When programme starts running it opens the file user inputted
+	and read file line by line. For each line it apply the beaytiful soup and then extract the necessary information like the test and href of the links. 
+	We have to apply the beautiful soup every line because we also need the line numbers. Then programme store the details of the link in different list.
+	Like it store the href of all the links in href_list and the text of links in name_list. It also store the whole link cendentail in the a_list.
+	A special List named check_list store the details related to duplicates links. i.e if the link occur once in the html file then it will be zero for that link
+	but if any link occur more than once then it will be non zero. This help us to print the details of the duplicate links.
+
+	The second part of programme takes a user input and then perform the desired task related to delete the links. It useses the decompose method of the 
+	Beautiful soup to perform this actions. The various actions are:
+
+		
+		1. "A" - Retain all the links and write the outpot in output.html.dedup file
+		2. "F" - Retain all the first occurences of the Duplicate links and then delete all the rest links and write outpot in output.html.dedup file
+		3. "<sequence of number seprated by comma>" - This retain the links written and delete all the rest and write outpot in output.html.dedup file

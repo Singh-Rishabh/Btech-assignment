@@ -1,0 +1,130 @@
+<!DOCTYPE doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>
+   Bootstrap 101 Template
+  </title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+   <div class="container-fluid">
+    <div class="navbar-header">
+     <a class="navbar-brand" href="Abcf">
+      NewsFeed
+     </a>
+     <button class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse" type="button">
+      <span class="icon-bar">
+      </span>
+      <span class="icon-bar">
+      </span>
+      <span class="icon-bar">
+      </span>
+     </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbarCollapse">
+     <ul class="nav navbar-nav">
+      <li>
+      </li>
+      <li>
+       <a>
+        Read-NEWS
+       </a>
+      </li>
+     </ul>
+     <form class="navbar-form navbar-right" role="search">
+      <div class="input-group">
+       <span class="input-group-btn">
+        <button class="btn btn-info" type="submit">
+         Go
+        </button>
+       </span>
+       <input class="form-control" id="search" placeholder="Search" type="text"/>
+       <span class="glyphicon glyphicon-search form-control-feedback ">
+       </span>
+       <a class="active" href="hello.html">
+        Heyyyyyyyyyyyyy
+       </a>
+      </div>
+     </form>
+    </div>
+   </div>
+  </nav>
+  <div class="container-fluid" style="margin-top: 60px">
+   <div class="image col-sm-9" style="height: 500px">
+    <img alt="IMAGE" height="500px" src="image1.jpg" width="100%"/>
+   </div>
+   <div class="login col-sm-3">
+    <a class="active" href="hello.html">
+     HIIIIIIIIIIIIIIIII
+    </a>
+    <div class="bg-primary" style="padding: 2px;margin: 10px 0px;">
+     <h3 class="text-center">
+      Sign In Here
+     </h3>
+    </div>
+    <form method="post">
+     <div class="form-group">
+      <label for="email">
+       Email:
+      </label>
+      <input class="form-control" id="email" name="email" placeholder="Email" type="name"/>
+     </div>
+     <div class="form-group">
+      <label for="password">
+       Password:
+      </label>
+      <input class="form-control" id="password" name="password" placeholder="Password" type="password"/>
+     </div>
+     <button class="btn btn-primary" name="btn1" type="submit">
+      Login
+     </button>
+    </form>
+    <?php
+                    define('HOST','localhost');
+                    define('USER','root');
+                    define('PASS','iamcool');
+                    define('DB','sample');
+                    $conn = mysqli_connect(HOST,USER,PASS,DB) or die('Unable to Connect');
+					$nameError = $emailError = "";
+					if(isset($_POST['btn1']) ){
+						$valid = true;
+
+						if(empty($_POST['email'])){
+							$valid=false;
+							$nameError = "Name missing";
+						}
+						$xyz = $_POST['email'];
+						$sql = "SELECT * FROM Authentication WHERE Username = '" . $xyz . "'";
+						$result = mysqli_query($conn,$sql);
+                    
+						if (mysqli_num_rows($result) >
+    0) {
+                            $pass = $_POST['password'];
+                            $row = mysqli_fetch_assoc($result);
+                            if($pass == $row['Password']){
+                                header('location:news.php');
+                            }else{
+                                header('location:index.php');
+                            }
+						}else {
+				   			 echo "0 results";
+						}
+					}
+              ?&gt;
+   </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+  </script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js">
+  </script>
+ </body>
+</html>
