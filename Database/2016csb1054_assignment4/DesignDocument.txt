@@ -1,0 +1,25 @@
+Design Document 
+
+Submitter name: Rishabh Singh
+Roll No.:		2016csb1054
+Course:			CSL-202 
+====================================================
+
+======================================== Implementation of the programme ======================================
+
+	The programme first runs the schema of the Database which is given in the file "database.sql". It creates 
+	the databse and 4 tables into it. All the four tables are initially empty. 
+
+	Then user run the Programme with -i option which insert the random data in the tables.
+	The Data Ascess LAyer Class have many random function each with a specific task to save random data.
+	All the data ascessing part from the database is done through this class to maintain the soft coding part.
+
+	There exist a queries.properties file in which all the queries related to the databse are written along with the username and password
+	of mysql as ha key value pair.
+
+	As the programme runs It first create the DataAscessLayer Class object named "dal". This takes username and password from the queries.properties file.
+	Through this object we call the random function listed in the readme to generate some random data.
+	All the data is stored in the array.
+	These array is passed to function "insertInDatabase()" to insert into different tables of the databse.
+	As the data is inserted user can query on the data by running the programme with -q option.
+		

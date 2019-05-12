@@ -1,0 +1,18 @@
+Sample Run : 
+
+	javac mainclass.java
+	java -cp .:./mysql-connector-java-5.1.46/mysql-connector-java-5.1.46.jar mainclass 
+	
+********************************************* Sample Outputs  on Sakila Database *********************************
+
+Total number of tables in the database are 16
+Min, Max, and Average number of columns per table are 3 13 5.625 respectively
+Min, Max, and Average number of rows per table are 2 16049 2954.5625 respectively
+Min, Max, and Average number of FKs present per table are 0 3 1.375 respectively
+Min, Max, and Average number of indexes present per table are 1 4 1.375 respectively
+Min, Max, and Average number of Auto Increment columns present per table are 0 1 0.8125 respectively
+Min, Max, and Average number of Blob columns present per table are 0 1 0.0625 respectively
+Min, Max, and Average number of Int columns present per table are 0 1 0.125 respectively
+
+******************************************************************************************************************
+

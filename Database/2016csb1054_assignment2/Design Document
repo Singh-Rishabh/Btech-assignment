@@ -1,0 +1,26 @@
+*******************************************************************************************************
+I have used java.sql.DatabaseMetaData for doing al the task in the problem. 
+
+Important function used are :
+		getConnection("jdbc:mysql://localhost:3306/sakila?useSSL=false", username, password);
+		createStatement()
+		con.getMetaData()
+		getTables()
+		getColumns(null,null,table_name,null)
+		getImportedKeys(null,null,table_name)
+		getIndexInfo(null,null,table_name,true,true)
+		con.close()
+		
+		
+At first I have used scanner class to take username and password of the user. When user enter the username and password then it connects to the sakila databse in the computer. Then programme use database metadata to get metadata and then i used different function to get all the required data from the database.
+
+With the help of these functions i have done all the parts in the question.
+For details about these function i have taken hints from javaDocs.
+
+Important assumptions: 
+
+	I have only found min max and average of the Int data type in mysql. I havent taken into considration other types of int like tiny short etc.
+	
+	I have asumed that user have mysql installed in his/her computer.
+	
+	
