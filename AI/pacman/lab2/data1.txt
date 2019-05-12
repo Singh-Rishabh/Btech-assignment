@@ -1,0 +1,10 @@
+MaxGen 50
+Random seed 10
+CUST No. XCOORD. YCOORD.
+1 35 35
+2 41 49
+3 35 17
+4 55 45
+5 55 20
+6 15 30
+7 25 30
